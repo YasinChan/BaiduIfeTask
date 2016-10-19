@@ -1,0 +1,52 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	padding: 20px;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+}
+div{
+	padding: 20px;
+}
+.all{
+	border: 1px solid #999;
+	overflow: auto;
+	background-color: #eee;
+}
+.left{
+	background-color: #fff;
+	float: left;
+	width: 160px;
+	border: 1px solid #999;
+}
+.left img{
+	float: left;
+}
+.left p{
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+}
+.right{
+	margin: 0px;
+	float: right;
+	width: 80px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.right img{
+	text-align: center;
+}
+.middle{
+	border: 1px solid #999;
+	margin-left: 220px;
+	margin-right: 140px;
+	background-color: #fff;
+}
