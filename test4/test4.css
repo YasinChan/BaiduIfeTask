@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*首们需要position:absolute;绝对定位。
+ * 而层的定位点，使用外补丁margin负值的方法。
+ * 负值的大小为层自身宽度高度除以二。
+ * 以下*/
+.all{
+	position: absolute;
+	height: 200px;
+	width: 400px;
+	background-color: #ccc;
+	top:50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -200px;	
+}
+/*border-radius:0 0 0 0 ; 四个数分别表示：左上；右上；右下；左下。*/
+.top-left{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 0 0 50px 0;
+	background-color: #fc0;
+}
+.bottom-right{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 50px 0 0 0;
+	background-color: #fc0;
+	right: 0;
+	bottom: 0;
+}
