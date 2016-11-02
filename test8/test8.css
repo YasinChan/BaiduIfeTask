@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+}
+
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container div{
+	height: 50px;
+	background: #eee;
+	float: left;
+	margin: 10px;
+}
+
+@media(min-width: 768px) {
+	.col-sm-4{
+		width: calc(33.33% - 20px);
+	}
+	
+	.col-sm-3{
+		width: calc(25% - 20px);
+	}
+	
+	.col-sm-6{
+		width: calc(50% - 20px);
+	}
+	
+	.col-sm-1{
+		width: calc(8.33333333% - 20px);
+	}
+	
+	.col-sm-2{
+		width: calc(16.66666667% - 20px);
+	}
+}
+
+@media(max-width: 768px) {
+	.col-xs-6{
+		width: calc(50% - 20px);
+	}
+	
+	.col-xs-12{
+		width: calc(100% - 20px);
+	}
+	
+	.col-xs-3{
+		width: calc(25% - 20px);
+	}
+	
+	.col-xs-2{
+		width: calc(16.66666667% - 20px);
+	}
+	
+	.col-xs-8{
+		width: calc(66.66666667% - 20px);
+	}
+	
+}
+
+
+/*另一种写法*/
+/*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container div{
+	
+	height: 50px;
+	background: #eee;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+@media(min-width: 768px) {
+	.col-sm-4{
+		width: 33.33333333% ;
+	}
+	
+	.col-sm-3{
+		width: 25% ;
+	}
+	
+	.col-sm-6{
+		width:50% ;
+	}
+	
+	.col-sm-1{
+		width: 8.33333333% ;
+	}
+	
+	.col-sm-2{
+		width: 6.66666667% ;
+	}
+}
+
+@media(max-width: 768px) {
+	.col-xs-6{
+		width: 50% ;
+	}
+	
+	.col-xs-12{
+		width: 100% ;
+	}
+	
+	.col-xs-3{
+		width: 25% ;
+	}
+	
+	.col-xs-2{
+		width: 16.66666667% ;
+	}
+	
+	.col-xs-8{
+		width: 66.66666667% ;
+	}
+	
+}
